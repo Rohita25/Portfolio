@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import "../style/Navbar.css";
-
+import "../assets/logo.png";
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="./assets/logo.png" alt="Rohita Bollam" className="navbar-logo"/>
+      <img src="/assets/logo.png" alt="Rohita Bollam" className="navbar-logo"/>
       <ul className="navbar-links">
         {links.map((link) => (
           <li key={link}>
@@ -38,6 +38,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 

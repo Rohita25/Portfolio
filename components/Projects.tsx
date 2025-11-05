@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../style/Projects.css";
 
 const projects = [
@@ -15,8 +15,7 @@ const projects = [
     ],
     tools: ["React JS", "CSS", "HTML", "Figma", "UX Research", "UI Design"],
     date: "2025",
-     context: "Academic MiniProject"
-
+    context: "Academic MiniProject"
   },
   {
     title: "VR Interview Simulation",
@@ -49,8 +48,7 @@ const projects = [
     tools: ["HTML", "CSS", "JavaScript", "FigJam", "UX Research"],
     date: "2024",
     context: "Academic project"
-  },
-  
+  }
 ];
 
 const Projects = () => {
@@ -77,47 +75,47 @@ const Projects = () => {
 
       {modalIdx !== null && (
         <div className="project-modal-overlay" onClick={closeModal}>
-          <div className="project-modal" onClick={e => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal}>×</button>
+          <div className="project-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              ×
+            </button>
             <div className="modal-layout">
-             
               {/* DETAILS COLUMN */}
               <div className="modal-columns">
                 <h2 className="modal-title">{projects[modalIdx].title}</h2>
                 <div className="modal-meta">
                   <span>{projects[modalIdx].date}</span>
                   <span className="modal-tags">
-                    {projects[modalIdx].tools.map(t => (
-                      <span className="modal-tag" key={t}>{t}</span>
+                    {projects[modalIdx].tools.map((t) => (
+                      <span className="modal-tag" key={t}>
+                        {t}
+                      </span>
                     ))}
                   </span>
-                  {projects[modalIdx].link && (
-                    <a
-                      href={projects[modalIdx].link}
-                      className="modal-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >Visit Project</a>
-                  )}
                 </div>
+
                 {projects[modalIdx].context && (
                   <p className="modal-context">{projects[modalIdx].context}</p>
                 )}
 
                 <div className="modal-section">
                   <div className="modal-section-title">What is the project?</div>
-                  <div className="modal-description">{projects[modalIdx].details}</div>
-                </div>
-                {projects[modalIdx].whatILearned && projects[modalIdx].whatILearned.length > 0 && (
-                  <div className="modal-section">
-                    <div className="modal-section-title">What I Learned</div>
-                    <ul className="modal-list">
-                      {projects[modalIdx].whatILearned.map(tip => (
-                        <li key={tip}>{tip}</li>
-                      ))}
-                    </ul>
+                  <div className="modal-description">
+                    {projects[modalIdx].details}
                   </div>
-                )}
+                </div>
+
+                {projects[modalIdx].whatILearned &&
+                  projects[modalIdx].whatILearned.length > 0 && (
+                    <div className="modal-section">
+                      <div className="modal-section-title">What I Learned</div>
+                      <ul className="modal-list">
+                        {projects[modalIdx].whatILearned.map((tip) => (
+                          <li key={tip}>{tip}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
               </div>
             </div>
           </div>

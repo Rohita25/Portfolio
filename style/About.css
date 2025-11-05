@@ -1,0 +1,123 @@
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px 0;
+  background: transparent;
+}
+
+.about-content {
+  max-width: 780px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #fafafa;
+  margin-bottom: 32px;
+  letter-spacing: 0.013em;
+  transition: color 0.3s;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.about-intro {
+  color: #b6bac2;
+  font-size: 1.17rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.about-detail {
+  color: #b6bac2;
+  font-size: 1.12rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  transition: color 0.3s;
+}
+
+.about-value-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(0,0,0,0.88);
+  border-radius: 20px;
+  padding: 22px 32px;
+  box-shadow: 0 4px 28px rgba(120, 40, 240, 0.13);
+  position: relative;
+  margin-bottom: 18px;
+  transition: box-shadow 0.25s, background 0.22s;
+}
+
+/* Side bar base */
+.about-value-bar {
+  width: 4px;
+  height: 38px;
+  background: linear-gradient(180deg, #c473fd 60%, #b4b4c8 100%);
+  border-radius: 8px;
+  transition: height 0.36s cubic-bezier(.64,-0.12,.52,1.18), background 0.22s;
+}
+
+/* Animate on card hover */
+.about-value-card:hover .about-value-bar {
+  height: 64px;
+  background: linear-gradient(180deg, #e46cff 90%, #a6a6e5 100%);
+}
+
+.about-value-title {
+  font-weight: 700;
+  font-size: 1.18rem;
+  color: #fff;
+  letter-spacing: 0.018em;
+  margin-bottom: 6px;
+  transition: color 0.24s;
+}
+.about-value-desc {
+  color: #b6bac2;
+  font-size: 1rem;
+  margin-top: 4px;
+  display: block;
+  transition: color 0.24s;
+}
+
+/* Optional: bold the card on hover for feedback */
+.about-value-card:hover {
+  box-shadow: 0 8px 36px rgba(180,76,255,0.17);
+  background: rgba(40, 16, 48, 0.96);
+}
+
+
+body.light-mode .about-section {
+  background: #fafbfc;
+  color: #232425;
+}
+
+body.light-mode .about-title,
+body.light-mode .about-values-title,
+body.light-mode .about-value-title {
+  color: #232425;
+}
+
+body.light-mode .about-intro,
+body.light-mode .about-detail,
+body.light-mode .about-value-desc {
+  color: #6d6d7a;
+}
+
+body.light-mode .about-value-card {
+  background: #f9f8ff;
+  box-shadow: 0 2px 18px rgba(120, 40, 240, 0.06);
+}
+body.light-mode .about-value-card.active,
+body.light-mode .about-value-card:hover,
+body.light-mode .about-value-card:focus {
+  background: #f3eaff;
+  box-shadow: 0 4px 24px rgba(170, 113, 255, 0.09);
+}
+
+body.light-mode .about-value-bar {
+  background: linear-gradient(180deg,#be4aff 70%, #9a72e6 100%);
+}

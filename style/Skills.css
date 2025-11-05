@@ -1,0 +1,105 @@
+.skills-section {
+  min-height: 100vh;
+  padding: 60px 0 32px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #fafafa;
+  letter-spacing: 0.01em;
+}
+
+.skills-subtitle {
+  font-size: 1rem;
+  color: #acaed7;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.skills-pill-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+.skill-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 30px;
+  background: linear-gradient(96deg, rgba(50,30,70,0.93) 70%, rgba(240,154,255,0.09) 100%);
+  color: #fafaff;
+  border-radius: 22px;
+  font-size: 0.99rem;
+  font-weight: 500;
+  box-shadow: 0 2px 7px 0 rgba(120, 40, 240, 0.07);
+  border: 1.4px solid transparent;
+  cursor: pointer;
+  position: relative;
+  transition:
+    background 0.20s cubic-bezier(.52,.17,.76,.73),
+    border 0.14s,
+    color 0.16s,
+    transform 0.19s cubic-bezier(.44,.13,.48,.87),
+    box-shadow 0.15s;
+}
+
+.skill-pill-icon {
+  font-size: 1.1em;
+  color: #cf90ff;
+  filter: drop-shadow(0 1px 3px #f09aff80);
+  transition: color 0.18s;
+}
+
+.skill-pill:hover,
+.skill-pill:focus {
+  background: linear-gradient(96deg, rgba(240,154,255,0.13) 10%,rgba(70,38,80,0.93) 98%);
+  border: 1.4px solid #f09aff;
+  color: #f09aff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 14px 0 #f09aff22;
+}
+
+.skill-pill:hover .skill-pill-icon,
+.skill-pill:focus .skill-pill-icon {
+  color: #f09aff;
+}
+
+@media (max-width: 500px) {
+  .skills-title { font-size: 1.3rem; }
+  .skills-pill-wrap { gap: 8px; }
+  .skill-pill { font-size: 0.85rem; padding: 6px 11px; }
+}
+
+body.light-mode .skills-title {
+  color: #000000;
+}
+body.light-mode .skills-subtitle {
+  color: #555555;
+}
+body.light-mode .skill-pill {
+  background: linear-gradient(90deg,#ffebfb 70%,#d8cbf5 100%);
+  color: #7d4bc8;
+  border: 1.3px solid #dab9fc;
+}
+
+body.light-mode .skill-pill:hover,
+body.light-mode .skill-pill:focus {
+  background: linear-gradient(90deg,#f4d2fd 10%,#ecdeff 98%);
+  border: 1.3px solid #be4aff;
+  color: #be4aff;
+}

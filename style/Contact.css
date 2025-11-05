@@ -1,0 +1,417 @@
+.contact-section {
+  min-height: 100vh;
+  padding: 100px 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* titles */
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #d85bff;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: #a39bbd;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* main layout */
+.contact-main-layout {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Info + Resume container */
+.contact-info-card {
+  background: #000000;
+  border-radius: 18px;
+  padding: 36px;
+  box-shadow: 0 4px 36px 0 #aa50e122;
+  flex: 1 1 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.contact-info-title {
+  font-size: 1.5rem;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+/* Info list left side */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.contact-info-icon {
+  background: #f09aff;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 13px;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-label {
+  font-size: 1.09rem;
+  font-weight: bold;
+  color: #fafafa;
+}
+
+.contact-info-value {
+  font-size: 1.03rem;
+  color: #b3b3b3;
+  margin-left: 10px;
+}
+
+/* Social section */
+.contact-social-title {
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 11px;
+  color: #fafafa;
+}
+
+.contact-social-list {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-social-icon {
+  background: #232026;
+  color: #fafafa;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.27rem;
+  transition: background 0.17s, color 0.18s, box-shadow 0.18s;
+}
+
+.contact-social-icon:hover {
+  background: #f09aff;
+  color: #fff;
+  box-shadow: 0 2px 9px #f09aff44;
+}
+
+/* Resume card right side */
+.contact-resume-card {
+  flex: 0 0 280px;
+  background: #000000;
+  border-radius: 13px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 20px 0 #f09aff15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-resume-icon {
+  color: #d85bff;
+  font-size: 2.1rem;
+  margin-bottom: 8px;
+}
+
+.contact-resume-title {
+  font-size: 1.13rem;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.contact-resume-desc {
+  font-size: 0.97rem;
+  color: #b3b3b3;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.contact-resume-btn {
+  background: linear-gradient(90deg, #f09aff 5%, #8e7cff 100%);
+  color: #18181b;
+  padding: 11px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 8px 0 #f09aff13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background 0.21s, color 0.16s, box-shadow 0.17s;
+  text-decoration: none;
+}
+
+.contact-resume-btn:hover,
+.contact-resume-btn:focus {
+  background: linear-gradient(90deg, #d18fff 19%, #a97aff 77%);
+  color: #fff;
+  box-shadow: 0 3px 13px 0 #f09aff81;
+}
+
+/* Form card */
+.contact-form-card {
+  background: #000000;
+  border-radius: 18px;
+  padding: 36px 34px 10px 34px;
+  box-shadow: 0 4px 36px 0 #aa50e122;
+  min-width: 300px;
+  flex: 1 1 390px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-title {
+  font-size: 1.5rem;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.contact-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.contact-form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form-group label {
+  font-size: 1rem;
+  color: #fafafa;
+  margin-bottom: 7px;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.contact-form-group label span {
+  color: #f09aff;
+  font-size: 1rem;
+  margin-left: 2px;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+  width: 100%;
+  padding: 11px 16px;
+  background: #18171b;
+  border: 1.6px solid #4a3b8e;
+  color: #e5e5ea;
+  border-radius: 8px;
+  font-size: 1.03rem;
+  margin-top: 6px;
+  resize: vertical;
+  transition: border-color 0.18s, background 0.21s;
+  font-family: inherit;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+  outline: none;
+  border-color: #f09aff;
+  background: #211d29;
+}
+
+.contact-form-group textarea {
+  min-height: 78px;
+}
+
+.contact-form-send-btn {
+  margin-top: 25px;
+  background: linear-gradient(90deg, #f09aff 5%, #a97aff 66%, #8e7cff 100%);
+  color: #18181b;
+  padding: 13px 0;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 2px 13px 0 #f09aff29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background 0.19s, color 0.19s, box-shadow 0.17s;
+}
+
+.contact-form-send-btn:hover,
+.contact-form-send-btn:focus {
+  background: linear-gradient(90deg, #d18fff 19%, #a97aff 77%);
+  color: #fff;
+  box-shadow: 0 5px 18px 0 #f09aff81;
+}
+
+/* Responsive */
+@media (max-width:950px) {
+  .contact-main-layout {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+    max-width: 600px;
+  }
+
+  .contact-info-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-resume-card {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-info-list,
+  .contact-social-list {
+    align-items: center;
+  }
+}
+
+@media (max-width:600px) {
+  .contact-section { padding: 18px 0 10px; }
+  .contact-title { font-size: 1.45rem; }
+  .contact-form-title,
+  .contact-info-title { font-size: 1.1rem; }
+  .contact-resume-icon { font-size: 1.17rem; }
+}
+
+/* Light mode */
+body.light-mode .contact-section {
+  background: #f4f6fc;
+  color: #18181b;
+}
+
+body.light-mode .contact-title {
+  color: #952cf2;
+}
+
+body.light-mode .contact-info-card,
+body.light-mode .contact-form-card {
+  background: #fff;
+  color: #28286f;
+  box-shadow: 0 4px 24px #b58aff14;
+}
+
+body.light-mode .contact-info-title,
+body.light-mode .contact-form-title {
+  color: #232425;
+}
+
+body.light-mode .contact-info-label {
+  color: #272642;
+}
+
+body.light-mode .contact-info-value,
+body.light-mode .contact-resume-desc {
+  color: #8435a1;
+}
+
+body.light-mode .contact-info-icon {
+  background: #e9bbfa;
+  color: #8d21be;
+}
+
+body.light-mode .contact-social-icon {
+  background: #e6e1f8;
+  color: #7028c1;
+}
+
+body.light-mode .contact-social-icon:hover {
+  background: #be4aff;
+  color: #fff;
+}
+
+body.light-mode .contact-form-group label {
+  color: #672ca2;
+}
+
+body.light-mode .contact-form-group input,
+body.light-mode .contact-form-group textarea {
+  background: #f7f2ff;
+  color: #232425;
+  border: 1.4px solid #dab9fc;
+}
+
+body.light-mode .contact-form-group input:focus,
+body.light-mode .contact-form-group textarea:focus {
+  border-color: #c47dff;
+  background: #f3eaff;
+}
+
+body.light-mode .contact-form-send-btn {
+  background: linear-gradient(90deg,#be4aff 5%,#e7b6ff 66%,#b19aff 100%);
+  color: #232425;
+}
+
+body.light-mode .contact-form-send-btn:hover,
+body.light-mode .contact-form-send-btn:focus {
+  background: linear-gradient(90deg,#af7dff 19%,#e0bdff 77%);
+  color: #fff;
+}
+
+body.light-mode .contact-resume-card {
+  background: #f7f3ff;
+}
+
+body.light-mode .contact-resume-icon {
+  color: #952cf2;
+}
+
+body.light-mode .contact-resume-title {
+  color: #232425;
+}
+
+body.light-mode .contact-resume-btn {
+  background: linear-gradient(90deg,#be4aff 5%,#f4e3ff 100%);
+  color: #7e27b2;
+}
+
+body.light-mode .contact-resume-btn:hover,
+body.light-mode .contact-resume-btn:focus {
+  background: linear-gradient(90deg,#be4aff 19%,#ffd9ff 77%);
+  color: #fff;
+}

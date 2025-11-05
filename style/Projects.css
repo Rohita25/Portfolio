@@ -1,0 +1,313 @@
+.projects-section {
+  min-height: 10vh;
+  padding: 80px 24px 60px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #fafafa;
+  letter-spacing: 0.013em;
+}
+
+/* Project grid layout */
+.projects-grid {
+  width: 100%;
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 30px 25px;
+  justify-items: center;
+}
+
+.project-card {
+  background: #1a1a28;
+  border-radius: 24px;
+  padding: 20px 20px 30px;
+  box-shadow: 0 6px 28px 0 rgba(84, 45, 158, 0.15);
+  border: 1px solid #4a3b8e;
+  max-width: 320px;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(.42,0,.31,1), box-shadow 0.22s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: scale(1.04);
+  box-shadow: 0 16px 38px rgba(165, 82, 255, 0.23);
+  border-color: #af8fff;
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+
+.project-title {
+  font-size: 1.28rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.project-desc {
+  font-size: 1.01rem;
+  font-weight: 400;
+  color: #b3b1bf;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.project-view-btn {
+  margin-top: auto;
+  background: #f09aff;
+  color: #1a1a28;
+  padding: 9px 23px;
+  font-size: 1rem;
+  border-radius: 32px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.23s, color 0.23s, box-shadow 0.23s;
+  box-shadow: 0 1px 12px 0 #f09aff29;
+}
+.project-view-btn:hover,
+.project-view-btn:focus {
+  background: #d18fff;
+  color: #fff;
+  box-shadow: 0 5px 24px 0 #f09aff81;
+}
+
+/* MODAL - Fully organized big popup */
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 18, 26, 0.79);
+  z-index: 2222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInModal 0.18s;
+}
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.project-modal {
+  background: #18181b;
+  border-radius: 34px;
+  padding: 56px 72px 42px 72px;
+  max-width: 830px;
+  width: 95vw;
+  box-shadow: 0 22px 120px 0 #a47fff32;
+  position: relative;
+  animation: popInModal 0.16s cubic-bezier(.47,1.54,.44,.8);
+  overflow-y: auto;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+@keyframes popInModal {
+  from { transform: scale(0.87); opacity: 0; }
+  to { transform: scale(1); opacity: 1;}
+}
+.modal-close {
+  position: absolute;
+  right: 38px;
+  top: 32px;
+  background: none;
+  color: #b9b8cc;
+  font-size: 2.7rem;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: color 0.18s;
+}
+.modal-close:hover { color: #f09aff; }
+
+.modal-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  align-items: flex-start;
+}
+
+.modal-img-box {
+  flex: 1 1 290px;
+  max-width: 340px;
+}
+.modal-img {
+  border-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+  height: 210px;
+  box-shadow: 0 6px 40px 0 #f09aff1c;
+  margin-bottom: 12px;
+  background: #2e2437;
+}
+
+.modal-columns {
+  flex: 2 1 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.modal-title {
+  font-size: 2.1rem;
+  color: #fafaff;
+  font-weight: 700;
+  margin-bottom: 2px;
+  letter-spacing: 0.013em;
+}
+
+.modal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 1.07rem;
+  color: #bbabe9;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+.modal-tags {
+  display: flex;
+  gap: 9px;
+}
+.modal-tag {
+  background: #26216e;
+  color: #bda4ff;
+  border-radius: 10px;
+  padding: 3px 13px;
+  font-size: 0.94em;
+  font-weight: 500;
+}
+
+.modal-link {
+  color: #f09aff;
+  background: transparent;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.09em;
+  border-radius: 5px;
+  padding: 1px 8px;
+  margin-left: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.modal-link:hover { color: #fff; background: #f09aff; text-decoration: none; }
+
+.modal-section {
+  margin-bottom: 0;
+}
+.modal-section-title {
+  color: #f09aff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+}
+.modal-description, .modal-list, .modal-context {
+  color: #eceaf3;
+  font-size: 1.09rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.modal-list {
+  padding-left: 20px;
+  margin: 0 0 7px 0;
+}
+.modal-context {
+  font-size: 1rem;
+  color: #8ca8c8;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+@media (max-width: 1000px) {
+  .project-modal { max-width: 99vw; padding: 32px 12px; }
+  .modal-layout { flex-direction: column; gap: 12px; }
+  .modal-img-box { max-width: 100%; }
+}
+@media (max-width:600px) {
+  .modal-title { font-size: 1.28rem;}
+  .modal-img { height: 125px; }
+}
+
+
+body.light-mode .projects-section {
+  background: #f2f2f8;
+  color: #232425;
+}
+
+body.light-mode .projects-title {
+  color: #232425;
+}
+
+body.light-mode .project-card {
+  background: #fff;
+  color: #272642;
+  border: 1.5px solid #cab6fd;
+  box-shadow: 0 2px 18px #ddb7ff10;
+}
+
+body.light-mode .project-card:hover,
+body.light-mode .project-card:focus {
+  background: #ede2fc;
+  border-color: #be4aff;
+  color: #be4aff;
+  box-shadow: 0 6px 24px #be4aff1a;
+}
+
+body.light-mode .project-title {
+  color: #232423;
+}
+
+body.light-mode .project-desc {
+  color: #4c495e;
+}
+
+body.light-mode .project-image {
+  background: #f8f4ff;
+}
+
+/* Modal */
+body.light-mode .project-modal {
+  background: #fff;
+  color: #2e2d4e;
+  box-shadow: 0 20px 90px #be4aff14;
+}
+
+body.light-mode .modal-title,
+body.light-mode .modal-section-title {
+  color: #7439af;
+}
+body.light-mode .modal-list {
+  color: #685c7a;
+}
+body.light-mode .modal-description{
+  color: #685c7a;
+}
+
+body.light-mode .modal-context,
+body.light-mode .modal-meta,
+body.light-mode .modal-tag {
+  color: #7d4bc8;
+}
+
+body.light-mode .modal-tag {
+  background: #eee5ff;
+}

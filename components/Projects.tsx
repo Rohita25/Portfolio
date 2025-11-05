@@ -5,7 +5,7 @@ const projects = [
   {
     title: "NammaThota",
     desc: "A simple farmer centric E-commerce application connecting farmers and buyers excluding middlemen.",
-    img: "../src/assets/project1.png",
+    img: "/assets/project1.png",
     details:
       "A digital platform where small farmers can list their fresh produce and consumers can buy directly without middlemen. Includes price transparency, seasonal crop updates, and location-based delivery options. Fully responsive UI, supports regional languages, and has a clean, accessible design for rural users.",
     whatILearned: [
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "VR Interview Simulation",
     desc: "A design exploration into immersive interfaces that help users practice interviews in realistic virtual settings. Focused on comfort, clarity, and user control across AR/VR and desktop modes.",
-    img: "/src/assets/project3.png",
+    img: "/assets/project3.png",
     details:
       "Redesigned from scratch for maximum performance, clarity, and personality. Included animation, dark/light theme, and a unique storytelling structure.",
     whatILearned: [
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Blood Harmony",
     desc: "A platform that connects donors and recipients instantly based on location and blood type.",
-    img: "../src/assets/project2.png",
+    img: "../assets/project2.png",
     details:
       "A web app that connects blood donors, recipients, and nearby hospitals in real time. It features instant donor matching based on blood type and location, emergency request alerts, and a clean, accessible interface. The system also includes a secure login, donation history tracking, and notification reminders for eligible donors. Fully responsive and tested for mobile use to ensure quick access during emergencies.",
     whatILearned: [
@@ -126,3 +126,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

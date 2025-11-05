@@ -24,12 +24,20 @@ const About = () => {
       <div className="about-content">
         <h2 className="about-title">About</h2>
         <p className="about-intro">
-           A beginner UI/UX designer and BCA student passionate about understanding how design shapes the way people interact with technology. I’m in the early stages of my design journey, learning the core principles of user experience, interface design, and front-end development. Through personal projects and continuous learning, I’m building my skills in research, prototyping, and visual storytelling. My goal is to grow into a designer who creates purposeful, human-centered designs that blend functionality with emotion.
+          A beginner UI/UX designer and BCA student passionate about understanding how
+          design shapes the way people interact with technology. I’m in the early stages
+          of my design journey, learning the core principles of user experience, interface
+          design, and front-end development. Through personal projects and continuous
+          learning, I’m building my skills in research, prototyping, and visual storytelling.
+          My goal is to grow into a designer who creates purposeful, human-centered designs
+          that blend functionality with emotion.
         </p>
+
         <div className="about-values">
-          <h3 className="about-values-title">Design Values</h3> <br></br>
+          <h3 className="about-values-title">Design Values</h3>
+          <br />
           <div className="about-values-list">
-            {designValues.map((v, i) => (
+            {designValues.map((v) => (
               <div
                 className={`about-value-card${v.highlight ? " active" : ""}`}
                 key={v.title}

@@ -62,7 +62,7 @@ const Contact = () => (
         <p className="contact-resume-desc">
           Get a detailed overview of my experience and skills
         </p>
-        <a href="/src/assets/Resume.pdf" download className="contact-resume-btn">
+        <a href="Resume.pdf" download className="contact-resume-btn">
           <FiDownload style={{ marginRight: "8px" }} />
           Download PDF
         </a>
@@ -72,3 +72,4 @@ const Contact = () => (
 );
 
 export default Contact;
+

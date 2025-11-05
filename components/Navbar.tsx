@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="/src/assets/logo.png" alt="Rohita Bollam" className="navbar-logo"/>
+      <img src="/assets/logo.png" alt="Rohita Bollam" className="navbar-logo"/>
       <ul className="navbar-links">
         {links.map((link) => (
           <li key={link}>
@@ -38,3 +38,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
